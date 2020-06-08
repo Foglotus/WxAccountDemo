@@ -1,0 +1,14 @@
+<!--index.wxml-->
+<view class="container">
+  <view wx:if="{{accounts.length > 0}}" >
+    <view class="item" wx:for="{{accounts}}" wx:key="{{index}}" bindtap="editUser" data-index="{{index}}">
+      <text class="info">姓名：{{item.username}}</text>
+      <text class="info">手机号：{{item.phone}}</text>
+    </view>
+  </view>
+  <view class="tips" wx:else>
+    <text>
+      一个用户也没有！！！
+    </text>
+  </view>
+</view>

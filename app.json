@@ -1,0 +1,32 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/user/edit",
+    "pages/user/add",
+    "pages/logs/logs"
+  ],
+  "tabBar": {
+    "list": [{
+      "pagePath": "pages/index/index",
+      "text": "通讯录",
+      "selectedColor": "124, 179, 66",
+      "iconPath":"assets/bar/nav_home.png",
+      "selectedIconPath":"assets/bar/nav_home_selected.png"
+    },
+    {
+      "pagePath": "pages/user/add",
+      "text": "添加",
+      "selectedColor": "124, 179, 66",
+      "iconPath":"assets/bar/nav_add.png",
+      "selectedIconPath":"assets/bar/nav_add_selected.png"
+    }]
+  },
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "WeChat",
+    "navigationBarTextStyle":"black"
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}

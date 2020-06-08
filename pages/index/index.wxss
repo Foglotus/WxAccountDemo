@@ -1,0 +1,27 @@
+/**index.wxss**/
+.container{
+  width: 100%;
+  height: 100%;
+  background-color: whitesmoke;
+}
+.item{
+  border-top: aliceblue;
+  border-width: 1rpx;
+  border-style: dashed;
+  padding: 10rpx;
+  width: 100%;
+  background-color: rgb(68, 68, 68);
+}
+.info {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  color: aliceblue;
+  font-weight: 400;
+  font-size: large;
+}
+
+.tips{
+  text-align: center;
+  padding: 22rpx;
+}

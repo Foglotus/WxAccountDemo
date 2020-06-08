@@ -1,0 +1,27 @@
+<!--pages/user/edit.wxml-->
+<view class="container">
+  <view class="header">修改用户</view>
+  <form bindsubmit="updateUser">
+    <!--用户名-->
+    <view class="inputView">
+        <label class="infoLabel">用户名</label>
+          <input wx:if="{{account.username}}" name="username" type="text" class="inputText" placeholder="{{account.username}}" />
+          <input wx:else name="username" type="text" class="inputText" placeholder="请输入用户名"/>
+    </view>
+    <view class="line"></view>
+    <!--手机-->
+    <view class="inputView">
+        <label class="infoLabel">手机</label>
+        <input wx:if="{{account.phone}}" name="phone" type="text" class="inputText" placeholder="{{account.phone}}"/>
+        <input  wx:else name="phone" type="text" class="inputText" placeholder="请输入手机号"/>
+    </view>
+    <!--按钮-->
+    <view>
+        <button class="updateBtn" type="primary" form-type='submit'>更新</button>
+    </view>
+    <view>
+        <button class="deleteBtn" type="warn" bindtap="deleteUser">删除</button>
+    </view>
+  </form>
+</view>
+
